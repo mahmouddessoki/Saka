@@ -1,0 +1,194 @@
+:root {
+    --main-color :rgba(220, 53, 69) !important;
+    --main-transition-duration : 0.3s;
+}
+
+* {
+     transition: all 0.5s;
+    -webkit-transition: all var(--main-transition-duration);
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+html {
+    scroll-padding-top: 50px;
+    scroll-behavior: smooth;
+}
+::selection {
+    background-color: var(--main-color);
+    color: white !important;
+}
+
+header {
+    background-image: url(../images/bg1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.social-icons span {
+    width: 2.5em;
+    height: 2.5em;
+    display: inline-block;
+   
+}
+
+
+.social-icons span:hover {
+    border-color:var(--main-color) !important;
+    color: var(--main-color) !important
+
+    
+}
+
+nav .nav-item .nav-link.active {
+    color: var(--main-color) !important;
+
+}
+
+nav .nav-item .nav-link:hover{
+    color: var(--main-color) !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0px 0px 0px  0.1rem var(--main-color);
+
+}
+
+#about {
+    background-image: url(../images/dots.png);
+    /* background-color: red; */
+    background-position: center center;
+    /* background-size: 100% 100%; */
+}
+
+.header h2 {
+    font-size: 2rem;
+    letter-spacing: 10px;
+   position: relative;
+   z-index: 5;
+}
+ .header h2::after {
+    position: absolute;
+    content: "about";
+    font-size: 2em;
+    z-index: 4;
+    color: #00000044;
+    /* letter-spacing: 5px; */
+   
+}
+
+#about .header h2::after {
+    content: "about";
+}
+#services .header h2::after {
+    content: "services";
+    color: #b4a0a044;
+}
+#testimonial .header h2::after {
+    content: "testimonial";
+}
+#courses .header h2::after {
+    content: "courses";
+
+}
+#contact .header h2::after {
+    content: "contact";
+
+}
+
+
+.service h3::after {
+    content: "";
+    display: block;
+    width: 30%;
+    height: 0.15rem;
+    background-color: var(--main-color);
+    margin: 0.5rem auto;
+}
+#services {
+    background-image: url(../images/dark_dot.jpg);
+    background-position: center center;
+}
+
+.service:hover .fa-stack-1x {
+    color: var(--main-color);
+}
+.service:hover .fa-stack-2x {
+    color: white !important;
+
+}
+
+.carousel img {
+    width: 8rem !important;
+    height: 8rem !important;
+}
+.carousel-indicators button {
+    width: 3rem !important;
+    height: 3rem !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.carousel-indicators button:nth-child(1) {
+    background-image: url(../images/me.jpg);
+
+}
+.carousel-indicators button:nth-child(2) {
+    background-image: url(../images/testimonial.jpg);
+
+}
+.carousel-indicators button:nth-child(3) {
+    background-image: url(../images/hero.jpg);
+
+}
+
+
+.card-title a:hover {
+    color: var(--main-color) !important
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: white !important;
+    background-color: var(--main-color) !important;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color: var(--main-color) !important;
+    border-bottom: 0 !important;
+}
+
+.card-container {
+    /* background-color: tomato;  */
+    height: 100%;
+}
+.card {
+    height: 100%;
+    box-shadow: 0px 0px  10px rgba(0, 0, 0, 0.1);
+    border: 0 !important;
+
+}
+.card-body {
+    padding-bottom: 0 !important;
+}
+
+.form-control:focus {
+    color: var(--main-color) !important;
+    /* background-color: var(--bs-body-bg); */
+    border-color: white !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem  var(--main-color) !important;
+}
+
+@media screen and (max-width: 991px) { 
+    html {
+        font-size: 14px;
+    }
+    #testimonial .header h2 {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 1200) { 
+    html {
+        font-size: 13px;
+    }
+}
